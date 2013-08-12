@@ -4,15 +4,39 @@
 <html>
   <head>
     <title>@title</title>
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.min.css")">
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="../assets/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
+  <div class="container">
+    <div class="masthead">
+      <h3 class="muted">bitBlu - Investments made easy</h3>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Downloads</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.navbar -->
+    </div>
+
     @content
 
+  <div class="footer">
+    <p>© Company 2013</p>
+  </div>
+
+  </div> <!-- /container -->
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
