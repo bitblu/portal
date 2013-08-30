@@ -35,6 +35,19 @@ body {
 	margin-bottom: 6em;
 }
 
+.section-big-padding {
+	margin-bottom: 21em;
+}
+
+
+.wufo-form {
+
+}
+
+.wufo-form input {
+	width: 100%;
+}
+
 .loader {
 	position: fixed;
 	left: 0px;
