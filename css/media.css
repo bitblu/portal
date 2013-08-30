@@ -1,0 +1,139 @@
+@media only screen and (min-width: 1200px)  {
+.milestones .span3 {
+	width: 292.5px;
+}
+
+.milestone-count {
+    font-size: 22px;
+}
+.rnr-icon-middle h2 {
+	font-size: 24px;
+}
+
+.navigation li a {
+	padding: 30px 10px;
+}
+
+.navigation.iconic li a {
+	padding:16px 10px;
+}
+
+.navigation.scroll li a {
+    padding: 15px 10px;
+}
+	
+}
+/* QUERIES FOR IPAD/TABLETPC  PORTRAIT AND LANDSSCAPE */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	
+#portfolio-wrap .span4 {
+	width:352px;
+}
+
+.navigation li a {
+	min-width:60px;
+}
+
+
+.navigation.scroll li a {
+	min-width:60px;
+}
+.logo {
+	width:120px;
+	padding:0;
+}
+.logo img {
+	max-width:100%;
+	height:auto;
+}
+
+.milestones .span3 {
+    width: 362px;
+}
+
+.pricing-table.four > div {
+	width: 48%;
+	margin-bottom: 40px;
+}
+
+
+
+}
+/*Add the following code to "media.css" file */
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+.cs-text-mid {
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 1.4;
+}
+ul.tabs {
+    border-bottom:none;
+}
+ul.tabs li {
+    width: 100%;
+    border-bottom:none;
+}
+ul.tabs li.active {
+	border:none;
+}
+.tabs_contents {
+    width: 100%;
+    border:none;
+}
+.selectnav {
+	display:block;
+}
+.one_half,
+.one_third,
+.two_third,
+.one_fourth,
+.three_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth { 
+   width: 100%;
+   margin:0;
+   margin-bottom:40px;
+   float:none;
+}
+.logo {
+	width:120px;
+	padding:0;
+	height: 50px;
+}
+.logo img {
+	width:100%;
+	height:auto;
+}
+
+.navigation .nav {
+	display:none;
+}
+
+.row {
+	margin-bottom:0;
+}
+
+[class*="span"] {
+	margin-bottom:30px;
+}
+
+.milestones .span3 {
+    width: 100%;
+}
+
+.pricing-table.four > div {
+   width: 98%;
+   margin-bottom:30px;
+}
+
+.header-text {
+	font-size:36px;
+}
+
+}

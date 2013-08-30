@@ -1,0 +1,117 @@
+/*======= HOME SECTION =======*/
+.home {
+	background-color: #F05328;
+	background-image: -moz-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -webkit-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -o-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -ms-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+}
+
+
+/*======= ABOUT SECTION =======*/
+.about {
+	color: #474E58;
+    background: #ffffff;		
+}
+
+/*======= MILESTONES SECTION =======*/
+.milestones {
+	background-color: #F05328;
+	background-image: -moz-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -webkit-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -o-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -ms-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	color:#4D1201;	
+}
+
+/*======= SERVICES SECTION =======*/
+.services {
+	color: #474E58;
+    background: #ffffff;	
+}
+.rnr-service-box .rnr-service-box-icon i {
+	background: #363f48;
+	color: mediumseagreen;
+	border: 4px solid mediumseagreen;
+	box-shadow: 0px 0px 0px 3px #363f48;
+}
+.rnr-service-box:hover .rnr-service-box-icon i {
+	box-shadow: 0px 0px 0px 6px #363f48;
+}
+.pricing-column h3 {
+	color: mediumseagreen;
+	background: #363f48;
+}
+.pricing-column h4 {
+    color: mediumseagreen;
+}
+.pricing-column .button {
+    color: mediumseagreen;
+}
+/*======= TESTIMONIALS SECTION =======*/
+.testimonials {
+	background-color: #F05328;
+	background-image: -moz-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -webkit-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -o-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -ms-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	color:#4D1201;
+}
+
+/*======= PORTFOLIO SECTION =======*/
+.portfolio {
+	color: #474E58;
+    background: #ffffff;
+}
+
+/*======= PORTFOLIO SECTION =======*/
+.blog {
+	color: #FFFFFF;
+    background-color: #F05328;
+}
+
+.blog a:hover {
+	color: #052929;
+}
+
+/*======= SHORTCODES SECTION =======*/
+.shortcodes {
+	color: #FFFFFF;
+    background-color: #F05328;
+}
+
+.shortcodes a:hover {
+	color: #64162C;
+}
+
+
+/*======= CONTACT SECTION =======*/
+.contact {
+	background-color: #F05328;
+	background-image: -moz-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -webkit-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -o-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -ms-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	color:#052929;
+}
+
+.telephone {
+	padding: 10px 20px 8px;
+	background-color: #ffffff;
+	color: #4D1201;
+}
+
+.twitter-feed {
+	background: #101010;
+    color: #F05328;
+}
+
+/*======= FOOTER SECTION =======*/
+.footer {
+	color: #F05328;
+	background:#ffffff;
+}

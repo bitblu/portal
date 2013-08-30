@@ -1,0 +1,69 @@
+﻿*** Versi Changelog ***
+
+19 June 2013 - Version 2.1
+
+	# Tweets feed updated with Twitter API v1.1
+
+11 June 2013 - Version 2.0
+
+	- Removed raphael.js and init.js(Not supporting major browsers)
+	+ Added and Updated Modernizr
+	# Updated to HTML5 Boilerplate
+	+ Added Twitter Bootstrap GRID
+	# Documentation File updated
+	# Lightbox changed to prettyPhoto
+	# Updated jQuery
+	# Typography Design Modified
+	* Ultra-Responsive( Supports Larger Screens > 1200px)
+	+ Added Twitter Feed Section
+	+ Added Testimonials Section
+	+ Added New Dividers
+	+ Added FitVids.js
+	# Font Awesome Updated
+	+ Smooth Scroll updated
+	+ Added New Menu Version
+	- New Elements added
+	# Existing Elements Code and Design Modified
+	+ Added Blog page
+	# Skins Modified and Easy to use
+	+ Filterable Portfolio added
+	+ AJAX Portfolio Added
+	+ Pricing Table added
+	# Typography Changed
+	+ New fonts added(Open Sans, Novecento Bold)
+	# Contact form updated and Bugs fixed.
+
+12 January 2013 - Version 1.2
+
+	* Font Awesome Updated
+	* Blog thumbnails lightbox fix
+	* Tabs act responsive
+	* Smooth Scroll updated
+	* Menu bugs fixed with “scrollspy”
+	* modified script.js
+	* Added jquery.easing-1.3.pack.js
+	* Added bootstrap-scrollspy.js
+	* removed scroll.js
+	* Modified style.css
+	* Modified dark.css
+	* Modified light.css
+	* Modified zebra-light.css
+	* Modified zebra-dark.css
+	* Documentation File updated
+
+23 December 2012 - Version 1.1
+
+	* Modified Home services Icons style.
+	* Added new skin oldschool.css
+	* Added testimonials section
+	* Edited home1.html, home2.html, home3.html
+	* Edited style.css
+	* Edited all skins inside /css/colors folder.
+	* Documentation file updated.
+	* Edited script.js
+
+22 December 2012 - Version 1.0
+
+	* Initial Release
+
+	

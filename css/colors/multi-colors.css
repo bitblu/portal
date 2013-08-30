@@ -1,0 +1,88 @@
+/*======= HOME SECTION =======*/
+.home {
+	background-color: #F05328;
+	background-image: -moz-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -webkit-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -o-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: -ms-radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+	background-image: radial-gradient(center center, circle cover, tomato 0%, #991B04 100%);
+}
+
+
+/*======= ABOUT SECTION =======*/
+.about {
+	background-color:#FFD602;
+	color:#5F442B;		
+}
+
+.team-member {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.team-member:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*======= MILESTONES SECTION =======*/
+.milestones {
+	background-color:#363f48;
+	background-image: -moz-radial-gradient(center center, circle cover, #363f48 0%, #192025 100%);	
+	background-image: -webkit-radial-gradient(center center, circle cover, #363f48 0%, #192025 100%);	
+	background-image: -o-radial-gradient(center center, circle cover, #363f48 0%, #192025 100%);	
+	background-image: -ms-radial-gradient(center center, circle cover, #363f48 0%, #192025 100%);	
+	background-image: radial-gradient(center center, circle cover, #363f48 0%, #192025 100%);		
+	color:mediumaquamarine;	
+}
+
+/*======= SERVICES SECTION =======*/
+.services {
+	background: mediumaquamarine;		
+	color:#363f48;	
+}
+
+/*======= TESTIMONIALS SECTION =======*/
+.testimonials {
+	background: lightcoral;
+	color: #743535;
+}
+
+/*======= PORTFOLIO SECTION =======*/
+.portfolio {
+	background: #171D24;
+    color: #ffffff;
+}
+
+/*======= PORTFOLIO SECTION =======*/
+.blog {
+	background: crimson;
+	color: #FFFFFF;
+}
+
+.blog a:hover {
+	color: #64162C;
+}
+
+/*======= SHORTCODES SECTION =======*/
+
+
+.shortcodes a:hover {
+	color: #64162C;
+}
+
+
+/*======= CONTACT SECTION =======*/
+.contact {
+	background: #E01C1C;
+	color: #ffffff;
+}
+
+.telephone {
+	padding: 10px 20px 8px;
+	background-color: rgb(255, 255, 255);
+	color: crimson;
+}
+
+.twitter-feed {
+	background: #E01212;
+    color: #5E0000;
+}
