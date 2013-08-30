@@ -27,8 +27,8 @@ body {
 	margin-bottom:6%;
 }
 
-.push-down1 { 	margin-top: 1em; }
-.push-down2 { 	margin-top: 2em; }
+.push-down1 { margin-top: 1em; }
+.push-down2 { margin-top: 2em; }
 
 .light-border {
 	border-bottom: 1px solid #dbdbdb;
@@ -42,6 +42,11 @@ body {
 	margin-bottom: 21em;
 }
 
+#bit-footer {
+	width: 100%;
+	height: 20px;
+	background-image: url(../images/Bitblu_WS_footer.png);
+}
 
 .wufo-form {
 
