@@ -27,6 +27,9 @@ body {
 	margin-bottom:6%;
 }
 
+.push-down1 { 	margin-top: 1em; }
+.push-down2 { 	margin-top: 2em; }
+
 .light-border {
 	border-bottom: 1px solid #dbdbdb;
 }
@@ -282,13 +285,8 @@ address {
 	-moz-transform: scale(1.2);
 	transform: scale(1.2);
 }
-.navigation li.active a {
-	color:#fff;
-	background:#222;
-}
-.navigation li a:hover {
-	background: #222;
-	color:#fff;
+.navigation li a:hover, li.active a {
+	color:#1d1751;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
