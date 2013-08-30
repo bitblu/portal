@@ -8,18 +8,32 @@ body {
 	text-transform: 
 }
 
-.bit-navy{
+.bit-navy {
 	color:#1d1751;
+}
+.bit-gray {
+	color: #959595;
 }
 .bit-armata {
 	font-family: 'Armata', sans-serif;
 }
 
+.bit-roboto {
+	font-family: 'Roboto Slab', serif;
+}
 
 .header-row {
 	margin-top:8%;
+	margin-bottom:6%;
 }
 
+.light-border {
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.section-padding {
+	margin-bottom: 6em;
+}
 
 .loader {
 	position: fixed;
@@ -35,6 +49,7 @@ body {
 	background: #fff;
 }
 h1 {
+	line-height: 1.3em;
 	font-size: 3.6em;
 }
 h1, h2, h3, h4, h5, h6{
@@ -88,9 +103,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, .section a {
 	position:relative;
 }
 
-.row {
-	margin-bottom:40px;
-}
 
 address {
 	display: block;
