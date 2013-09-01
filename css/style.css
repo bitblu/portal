@@ -12,7 +12,7 @@ body {
 	color:#1d1751;
 }
 .bit-gray {
-	color: #959595;
+	color: #959595; 
 }
 .bit-armata {
 	font-family: 'Armata', sans-serif;
@@ -72,6 +72,15 @@ body {
 h1 {
 	line-height: 1.3em;
 	font-size: 3.6em;
+}
+h2 {
+	line-height: 1.2em;
+	font-size: 3em;
+}
+h5
+{
+	line-height: 1.2em;
+	font-size: 1.1em;	
 }
 h1, h2, h3, h4, h5, h6{
 	padding:0;
@@ -1374,3 +1383,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 
 
+#cycler{position:relative;}
+#cycler img{position:absolute;z-index:1}
+#cycler img.active{z-index:3}

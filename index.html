@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿    <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -35,7 +35,7 @@
 
 
 </head>
-<body data-spy="scroll" data-target=".navigation">
+<body data-spy="scroll" data-target=".navigation" onload="linedraw(0, 200, 200, 0)">
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -43,7 +43,7 @@
 
 <header class="navigation iconic animated fadeInDown">
 
-	<div class="container">
+	<div class="container" id="Menu">
 		<div class="logo-container">
 			<div class="logo"><a href="#home"><img src="images/Bitblu_breakDown.png" alt="logo" /></a></div>
 		</div>
@@ -51,10 +51,11 @@
 		<div class="nav-container">
 			<nav>
 				<ul class="nav bit-armata" id="nav">
-					<li> <a href="#hashhome" class="nav-active"><span>Home</span></a></li>
-					<li> <a href="#hashabout"><span>About</span></a> </li>
-					<li> <a href="#hashcontact"><span>Contact Us</span></a> </li>
-					<li> <a href="#hashsignup"><span>Sign Up</span></a> </li>
+					<li> <a onclick="scrollToAnchor('hashhome', this.id)" class="nav-active" id="A1"><span>Home</span></a></li>
+					<!--<li> <a onclick="drawIt()" class="nav-active" id="hashhomebtn"><span>Home</span></a></li>-->
+					<li> <a onclick="scrollToAnchor('hashabout', this.id)" id="hashaboutbtn"><span>About</span></a> </li>
+					<li> <a onclick="scrollToAnchor('hashcontact', this.id)" id="hashcontactbtn"><span>Contact Us</span></a> </li>
+					<li> <a onclick="scrollToAnchor('hashsignup', this.id)" id="hashsignupbtn"><span>Sign Up</span></a> </li>
 				</ul>
 			</nav>
 		</div>
@@ -63,25 +64,36 @@
 </header>
 
 
-<div class="container">
+<div class="container" id="bla">
 
 	<div class="header-row row"></div>
 
 	<div class="row section-big-padding" id="hashhome">
 		<div class="span1"></div>
-		<div class="span7 bit-navy bit-armata">
-			<div class="span7 last">
-				<h1>The easiest way to build your cryptocurrency portfolio.</h1>
+		<div class="span7 bit-navy bit-armata" style="  width: 45%;">
+			<div>
+				<h2>The easiest way to build <br />  your cryptocurrency <br /> portfolio.</h2>
 			</div>
-			<div class="span7 last bit-gray bit-roboto">
+            <div><br /><br /><br /><br /><br /><br /></div>
+            <div>
+            <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="img1"/>
+            <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="img2"/>
+            <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="img3"/>
+            </div>
+			<div>
 				<h5>
 					We help you build an investment portfolio over the Bitcoin and other crypto-assets.
 					You choose your preferred assets from a variety of currencies, shares, contracts and indexes and then create your perfect portfolio.
 					test
 				</h5>
 			</div>
-
 		</div>
+        <div id="cycler">
+        <img class="active" src="images\MainImages\1.png" alt="My image" />
+        <img src="images\MainImages\1.png" alt="My image" id="img1" />	
+        <img src="images\MainImages\2.png" alt="My image" id="img2" />	
+        <img src="images\MainImages\3.png" alt="My image" id="img3" />		
+        </div>
 	</div>
 
 	<div class="row section-padding" id="hashabout">
@@ -221,10 +233,27 @@
 		<div class="span10 bit-navy bit-armata">
 			<h1>You know you want to trust us</h1>
 		</div>
-		<div class="span4"></div>
-		<div class="span4">
-			Your e-mail <input/>
-		</div>
+        <!-- Begin MailChimp Signup Form -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="mc_embed_signup" style="display:block">
+            <form action="http://bitblu.us7.list-manage.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=3cd83a70d2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	        <div>
+                <input type="text" value="Your e-mail" name="EMAIL" id="mce-EMAIL"/>
+                <input type="submit" value="Send" class="button" style="display:inline"/>
+            </div>
+	        <div id="mce-responses" class="clear">
+		        <div class="response" id="mce-error-response" style="display:none"></div>
+		        <div class="response" id="mce-success-response" style="display:none"></div>
+	        </div>
+
+            </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+
 	</div>
 
 </div>
@@ -232,12 +261,11 @@
 <div id="bit-footer"></div>
 
 
-
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/jquery.fittext.js"></script>
 <script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.drawline.js"></script>
 <script type="text/javascript">var m7x4z5;(function(d, t) {
 	var s = d.createElement(t), options = {
 		'userName':'bitblu',
@@ -251,6 +279,60 @@
 		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
 		try { m7x4z5 = new WufooForm();m7x4z5.initialize(options);m7x4z5.display(); } catch (e) {}};
 	var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
+})(document, 'script');
+
+function scrollToAnchor(aid, id) {
+    var divTag = $("div[id='" + aid + "']");
+    var menuTag = $("div[id='Menu']");
+    $('html,body').animate({ scrollTop: divTag.offset().top - menuTag.height() - 30 }, 'meduim');
+    var aTag = $("a[id='" + id + "']");
+
+}
+
+function drawIt() {
+    x = 50;
+    y = 75
+    startx = 0;
+    starty = 75;
+
+    $(bla).drawLine(0, 0, 500, 500);
+}
+
+function linedraw(ax, ay, bx, by) {
+    if (ay > by) {
+        bx = ax + bx;
+        ax = bx - ax;
+        bx = bx - ax;
+        by = ay + by;
+        ay = by - ay;
+        by = by - ay;
+    }
+    var calc = Math.atan((ay - by) / (bx - ax));
+    calc = calc * 180 / Math.PI;
+    var length = Math.sqrt((ax - bx) * (ax - bx) + (ay - by) * (ay - by));
+    document.body.innerHTML += "<div id='line' style='height:" + length + "px;width:1px;background-color:black;position:absolute;top:" + (ay) + "px;left:" + (ax) + "px;transform:rotate(" + calc + "deg);-ms-transform:rotate(" + calc + "deg);transform-origin:0% 0%;-moz-transform:rotate(" + calc + "deg);-moz-transform-origin:0% 0%;-webkit-transform:rotate(" + calc + "deg);-webkit-transform-origin:0% 0%;-o-transform:rotate(" + calc + "deg);-o-transform-origin:0% 0%;'></div>"
+}
+
+function radioPicHover(radio) {
+    //$(mainImage).attr('src', );
+
+    $(mainImage)
+        .fadeTo(1000, 1, function () {
+            $(mainImage).attr('src', "images\\MainImages\\" + radio.value);
+        });
+}
+
+function cycleImages(radio) {
+    radio.checked = true;
+    var $active = $('#cycler .active');
+        var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+        document.getElementById(radio.value).style.zIndex = 2;
+        $active.fadeOut(800, function () {//fade out the top image
+            $active.css('z-index', 1).show().removeClass('active'); //reset the z-index and unhide the image
+            document.getElementById(radio.value).style.zIndex = 3;
+            document.getElementById(radio.value).className += " active";
+        });
+}
+</script>
 </body>
 </html>
