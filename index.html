@@ -1,4 +1,5 @@
-﻿    <!DOCTYPE html>
+﻿
+    <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -35,11 +36,22 @@
 
 
 </head>
-<body data-spy="scroll" data-target=".navigation" onload="linedraw(0, 200, 200, 0)">
+<body data-spy="scroll" data-target=".navigation" onload="onLoad()" onresize="clearOnResize()" >
+
+    <!-- Texts and images for main title -->
+    <span style="visibility:hidden">
+        <span id="textOpt1">build</span>
+        <span id="textOpt2">manage</span>
+        <span id="textOpt3">grow</span>
+
+        <span id="img1">images\MainImages\1.png</span>
+        <span id="img2">images\MainImages\2.png</span>
+        <span id="img3">images\MainImages\3.png</span>		
+    </span>
+
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
-
 
 <header class="navigation iconic animated fadeInDown">
 
@@ -51,11 +63,10 @@
 		<div class="nav-container">
 			<nav>
 				<ul class="nav bit-armata" id="nav">
-					<li> <a onclick="scrollToAnchor('hashhome', this.id)" class="nav-active" id="A1"><span>Home</span></a></li>
-					<!--<li> <a onclick="drawIt()" class="nav-active" id="hashhomebtn"><span>Home</span></a></li>-->
-					<li> <a onclick="scrollToAnchor('hashabout', this.id)" id="hashaboutbtn"><span>About</span></a> </li>
-					<li> <a onclick="scrollToAnchor('hashcontact', this.id)" id="hashcontactbtn"><span>Contact Us</span></a> </li>
-					<li> <a onclick="scrollToAnchor('hashsignup', this.id)" id="hashsignupbtn"><span>Sign Up</span></a> </li>
+					<li> <a onclick="scrollToAnchor('hashhome', this)" class="nav-active" id="A1"><span>Home</span></a></li>
+					<li> <a onclick="scrollToAnchor('hashabout', this)" id="hashaboutbtn"><span>About</span></a> </li>
+					<li> <a onclick="scrollToAnchor('hashcontact', this)" id="hashcontactbtn"><span>Contact Us</span></a> </li>
+					<li> <a onclick="scrollToAnchor('hashsignup', this)" id="hashsignupbtn"><span>Sign Up</span></a> </li>
 				</ul>
 			</nav>
 		</div>
@@ -63,47 +74,70 @@
 	</div>
 </header>
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
-<div class="container" id="bla">
+<div class="contentContainer">
+<div>
 
-	<div class="header-row row"></div>
-
-	<div class="row section-big-padding" id="hashhome">
-		<div class="span1"></div>
-		<div class="span7 bit-navy bit-armata" style="  width: 45%;">
-			<div>
-				<h2>The easiest way to build <br />  your cryptocurrency <br /> portfolio.</h2>
+    	<div class="row section-padding" id="hashhome">
+		<div class="bit-navy bit-armata">
+			<div class="last">
+                <div style="height:20px"></div>
+                <div style="display:inline-block;width:65%">
+                    <h1>The easiest way to <span id="actionTitle">build</span> your <br /> cryptocurrency portfolio.</h1>
+                </div>
+                <div style="display:inline-block;width:40%">
+                    <img id="firstImg" src="images\MainImages\1.png" style="position:absolute; z-index:2; left:65%;top:0px" alt=""/>
+                    <img id="secondImg" src="images\MainImages\2.png"  style="position:absolute; left:65%;top:0px" alt="" />	                    
+                </div>
 			</div>
-            <div><br /><br /><br /><br /><br /><br /></div>
-            <div>
-            <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="img1"/>
-            <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="img2"/>
-            <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="img3"/>
-            </div>
-			<div>
-				<h5>
-					We help you build an investment portfolio over the Bitcoin and other crypto-assets.
-					You choose your preferred assets from a variety of currencies, shares, contracts and indexes and then create your perfect portfolio.
-					test
-				</h5>
+            <div style="height:155px"></div>
+			<div style="position:relative">
+                <div id="pictureRadios" style="position:relative">
+                <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" checked="checked" value="1" id="radio1"/>
+                <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="2"/>
+                <input type="radio" class="radio" name="pic" onmouseover="cycleImages(this)" value="3"/>
+                </div>
 			</div>
-		</div>
-        <div id="cycler">
-        <img class="active" src="images\MainImages\1.png" alt="My image" />
-        <img src="images\MainImages\1.png" alt="My image" id="img1" />	
-        <img src="images\MainImages\2.png" alt="My image" id="img2" />	
-        <img src="images\MainImages\3.png" alt="My image" id="img3" />		
-        </div>
-	</div>
+            <div style="width:100%;height:15px ;text-align:center"></div>
+            <div style="width:100%;height:20px ;text-align:center" id="homeSplittingLine"></div>
+	    	</div>
+            <div class="last bit-gray bit-roboto">
+                <div style="display:inline-block;width:60%">
+                    <h5>
+					    We help you build an investment portfolio over the Bitcoin and other crypto-assets.
+					    You choose your preferred assets from a variety of currencies, shares, contracts and indexes and then create your perfect portfolio.
+					    test
+				    </h5>
+                </div>
+                <div style="display:inline-block;width:13%">
+                </div>
+                <div style="display:inline-block; width:20%; vertical-align:top;">
+                    <center>
+                    <input type="button" value="Get Started" onclick="scrollToAnchor('hashsignup', null)" class="button"/>
+                    </center>
+                </div>
+			</div>
+
+
+	      </div>
+</div>
+
 
 	<div class="row section-padding" id="hashabout">
-		<div class="span10 bit-navy bit-armata">
-			<div class="span10 last">
+		<div class="bit-navy bit-armata">
+			<div class="last">
 				<h1>
 					Why Bitblu
 				</h1>
 			</div>
-			<div class="span10 last bit-gray bit-roboto">
+			<div class="last bit-gray bit-roboto">
 				<h5>
 					Crypto-currency investment is hard. To invest smartly, you need to know the meaning of terms like Litecoin, PPCoin, Ripple, ASICMiner and --another asset--. We build simple indexes and investment tools that turns this complex world into something as easy to understand as S&P 500.
 				</h5>
@@ -112,15 +146,14 @@
 		</div>
 	</div>
 
-
 	<div class="row section-padding">
-		<div class="span10 bit-navy bit-armata">
-			<div class="span10 last ">
+		<div class="bit-navy bit-armata">
+			<div class="last ">
 				<h1>
 					Why should you trust us?
 				</h1>
 			</div>
-			<div class="span10 last bit-gray bit-roboto">
+			<div class="last bit-gray bit-roboto">
 				<h5>
 					We value our customers and see them as our partners, not (just) our source of revenue. We are gathering the best minds in the Bitcoin world to make sure your assets are secure and well-managed.
 
@@ -133,8 +166,8 @@
 
 	<div class="row section-padding" id="hashteam">
 
-		<div class="span12 bit-navy bit-armata">
-			<div class="span11 last">
+		<div class="bit-navy bit-armata">
+			<div class="last">
 				<h1>
 					Team
 				</h1>
@@ -238,9 +271,15 @@
         <br />
         <br />
         <br />
+
+
+
+
         <div id="mc_embed_signup" style="display:block">
             <form action="http://bitblu.us7.list-manage.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=3cd83a70d2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	        <div>
+            <!--http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=5ff95a04cc-->
+                <input type="checkbox" style="background-color:Black"/>bla
+            <div class="last bit-gray bit-roboto">
                 <input type="text" value="Your e-mail" name="EMAIL" id="mce-EMAIL"/>
                 <input type="submit" value="Send" class="button" style="display:inline"/>
             </div>
@@ -255,7 +294,7 @@
         <!--End mc_embed_signup-->
 
 	</div>
-
+    </div>
 </div>
 
 <div id="bit-footer"></div>
@@ -266,73 +305,120 @@
 <script src="js/jquery.fittext.js"></script>
 <script src="js/jquery.fitvids.js"></script>
 <script src="js/jquery.drawline.js"></script>
-<script type="text/javascript">var m7x4z5;(function(d, t) {
-	var s = d.createElement(t), options = {
-		'userName':'bitblu',
-		'formHash':'m7x4z5',
-		'autoResize':true,
-		'height':'495',
-		'async':true,
-		'header':'show'};
-	s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-	s.onload = s.onreadystatechange = function() {
-		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-		try { m7x4z5 = new WufooForm();m7x4z5.initialize(options);m7x4z5.display(); } catch (e) {}};
-	var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');
+<script type="text/javascript">    var m7x4z5; (function (d, t) {
+        var s = d.createElement(t), options = {
+            'userName': 'bitblu',
+            'formHash': 'm7x4z5',
+            'autoResize': true,
+            'height': '495',
+            'async': true,
+            'header': 'show'
+        };
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function () {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { m7x4z5 = new WufooForm(); m7x4z5.initialize(options); m7x4z5.display(); } catch (e) { } 
+        };
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    })(document, 'script');
 
-function scrollToAnchor(aid, id) {
-    var divTag = $("div[id='" + aid + "']");
-    var menuTag = $("div[id='Menu']");
-    $('html,body').animate({ scrollTop: divTag.offset().top - menuTag.height() - 30 }, 'meduim');
-    var aTag = $("a[id='" + id + "']");
+    function scrollToAnchor(aid, id) {
+        var divTag = $("div[id='" + aid + "']");
+        var menuTag = $("div[id='Menu']");
+        $('html,body').animate({ scrollTop: divTag.offset().top - menuTag.height() - 50 }, 'meduim');
 
-}
-
-function drawIt() {
-    x = 50;
-    y = 75
-    startx = 0;
-    starty = 75;
-
-    $(bla).drawLine(0, 0, 500, 500);
-}
-
-function linedraw(ax, ay, bx, by) {
-    if (ay > by) {
-        bx = ax + bx;
-        ax = bx - ax;
-        bx = bx - ax;
-        by = ay + by;
-        ay = by - ay;
-        by = by - ay;
+        if (id != null) {
+            markSelected(id);
+        }
     }
-    var calc = Math.atan((ay - by) / (bx - ax));
-    calc = calc * 180 / Math.PI;
-    var length = Math.sqrt((ax - bx) * (ax - bx) + (ay - by) * (ay - by));
-    document.body.innerHTML += "<div id='line' style='height:" + length + "px;width:1px;background-color:black;position:absolute;top:" + (ay) + "px;left:" + (ax) + "px;transform:rotate(" + calc + "deg);-ms-transform:rotate(" + calc + "deg);transform-origin:0% 0%;-moz-transform:rotate(" + calc + "deg);-moz-transform-origin:0% 0%;-webkit-transform:rotate(" + calc + "deg);-webkit-transform-origin:0% 0%;-o-transform:rotate(" + calc + "deg);-o-transform-origin:0% 0%;'></div>"
-}
 
-function radioPicHover(radio) {
-    //$(mainImage).attr('src', );
+    function markSelected(selected) {
+        x1 = selected.offsetLeft + 15;
+        x2 = selected.offsetLeft + selected.offsetWidth - 15;
+        $(Menu).drawLine(x1, 0, x2, 0, "menuItem", "#393562", 6);
+    }
 
-    $(mainImage)
-        .fadeTo(1000, 1, function () {
-            $(mainImage).attr('src', "images\\MainImages\\" + radio.value);
-        });
-}
+    function clearOnResize() {
+        $(Menu).clearLine("menuItem");
+    }
 
-function cycleImages(radio) {
-    radio.checked = true;
-    var $active = $('#cycler .active');
-        var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
-        document.getElementById(radio.value).style.zIndex = 2;
-        $active.fadeOut(800, function () {//fade out the top image
-            $active.css('z-index', 1).show().removeClass('active'); //reset the z-index and unhide the image
-            document.getElementById(radio.value).style.zIndex = 3;
-            document.getElementById(radio.value).className += " active";
-        });
-}
+    function linedraw(ax, ay, bx, by) {
+        if (ay > by) {
+            bx = ax + bx;
+            ax = bx - ax;
+            bx = bx - ax;
+            by = ay + by;
+            ay = by - ay;
+            by = by - ay;
+        }
+        var calc = Math.atan((ay - by) / (bx - ax));
+        calc = calc * 180 / Math.PI;
+        var length = Math.sqrt((ax - bx) * (ax - bx) + (ay - by) * (ay - by));
+        document.body.innerHTML += "<div id='line' style='height:" + length + "px;width:1px;background-color:black;position:absolute;top:" + (ay) + "px;left:" + (ax) + "px;transform:rotate(" + calc + "deg);-ms-transform:rotate(" + calc + "deg);transform-origin:0% 0%;-moz-transform:rotate(" + calc + "deg);-moz-transform-origin:0% 0%;-webkit-transform:rotate(" + calc + "deg);-webkit-transform-origin:0% 0%;-o-transform:rotate(" + calc + "deg);-o-transform-origin:0% 0%;'></div>"
+    }
+
+    bool = true;
+    function cycleImages(radio) 
+    {
+        if (!radio.checked) {
+
+            radio.checked = true;
+
+            if (bool) {
+                $(secondImg).attr("src", $("#img" + radio.value).text());
+                $(firstImg).fadeOut(800);
+                $(secondImg).fadeIn(800);
+            }
+            else {
+                $(firstImg).attr("src", $("#img" + radio.value).text());
+                $(firstImg).fadeIn(800);
+                $(secondImg).fadeOut(800);
+            }
+
+            bool = !bool;
+            $(actionTitle).text($("#textOpt" + radio.value).text());
+        }
+    }
+
+    function cycleImagesAuto(radio) {
+        if (!radio.checked) {
+
+            radio.checked = true;
+
+            if (bool) {
+                $(secondImg).attr("src", $("#img" + radio.prop("value")).text());
+                $(firstImg).fadeOut(800);
+                $(secondImg).fadeIn(800);
+            }
+            else {
+                $(firstImg).attr("src", $("#img" + radio.prop("value")).text());
+                $(firstImg).fadeIn(800);
+                $(secondImg).fadeOut(800);
+            }
+
+            bool = !bool;
+            $(actionTitle).text($("#textOpt" + radio.prop("value")).text());
+        }
+    }
+
+    $(document).ready(function () {
+        var refreshId = setInterval(function () {
+
+            //alert($('input[name=pic]:checked', "#pictureRadios").val()); 
+            var next = $('input[name=pic]:checked', "#pictureRadios").next().prop("checked", "true");
+            if (next.length == 0) {
+                $(radio1).prop("checked", "true");
+                next = $('input[name=pic]:checked', "#pictureRadios");
+            }
+
+            cycleImagesAuto(next);
+
+        }, 13000);
+    });
+
+    function onLoad() {
+        $(homeSplittingLine).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    }
 </script>
 </body>
 </html>

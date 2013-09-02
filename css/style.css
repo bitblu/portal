@@ -71,11 +71,11 @@ body {
 }
 h1 {
 	line-height: 1.3em;
-	font-size: 3.6em;
+	font-size: 3.1em;
 }
 h2 {
 	line-height: 1.2em;
-	font-size: 3em;
+	font-size: 2.8em;
 }
 h5
 {
@@ -133,6 +133,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, .section a {
 	position:relative;
 }
 
+.contentContainer{
+	position:relative;
+	width:1020px;
+    margin:0px auto;
+}
 
 address {
 	display: block;
@@ -220,6 +225,7 @@ address {
     width: 100%;
     z-index: 200;
 }
+
 .navigation.scroll {
 	box-shadow:0px 2px 33px rgba(0, 0, 0, 0.15);
 	-webkit-transition: all 0.4s ease;
@@ -1245,7 +1251,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 .commentlist .the-comment .comment-text *:last-child {
 	margin-bottom: 0;
 }
-.commentlist div.avatar {
+.commentlist 	.avatar {
 	float: left;
 	margin-right: 15px;
 	padding: 4px;
@@ -1381,8 +1387,16 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	-webkit-animation-delay: 3s /* Safari and Chrome */;
 }
 
+.checkbox {
+  width: 19px;
+  height: 25px;
+  padding: 0 5px 0 0;
+  background: url(checkbox.png) no-repeat;
+  display: block;
+  clear: left;
+  float: left;
+}
 
-
-#cycler{position:relative;}
-#cycler img{position:absolute;z-index:1}
-#cycler img.active{z-index:3}
+#cycler {position:relative;}
+#cycler img{position:absolute; z-index:1}
+#cycler img.active{z-index:2}
