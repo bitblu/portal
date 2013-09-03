@@ -1505,6 +1505,15 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	color: #ffffff;
 }
 
+.textBox
+{
+     font-family:'Armata', sans-serif !important; 
+     border:1px solid #ddd;
+}
+
+.hide,.cloak div,.cloak span,.likert.cloak tbody,.likert.cloak thead
+    {display:none !important}
+
 #cycler {position:relative;}
 #cycler img{position:absolute; z-index:1}
 #cycler img.active{z-index:2}   
