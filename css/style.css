@@ -1471,7 +1471,36 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     height:55px;
 }
 
+.blogButton 
+{
+    padding-left: 17px;
+    padding-right: 17px;
+    text-align:center;
+	font-size: 16px;
+	font-family: 'Armata', sans-serif;
+	border: 0 none;
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: -webkit-gradient(linear, left top, left bottom, from( rgba(255, 255, 255, 0)), to( rgba(0, 0, 0, 0.2)));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	color: inherit;
+	cursor: pointer;
+	background: #24286c;
+	height: 1.8em;
+	color: #ffffff;
+}
 
 #cycler {position:relative;}
 #cycler img{position:absolute; z-index:1}
-#cycler img.active{z-index:2}
+#cycler img.active{z-index:2}   
