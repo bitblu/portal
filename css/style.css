@@ -1387,14 +1387,78 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	-webkit-animation-delay: 3s /* Safari and Chrome */;
 }
 
-.checkbox {
-  width: 19px;
-  height: 25px;
-  padding: 0 5px 0 0;
-  background: url(checkbox.png) no-repeat;
-  display: block;
-  clear: left;
-  float: left;
+.bitBluCheckbox {
+	width: 25px;
+	margin: 11px 0px;
+	margin-right: 6px;
+	position: relative;
+}
+
+.bitBluCheckbox label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+  	left: 0;
+	background: #FFFFFF;
+	border:1px solid #ddd;
+}
+
+/**
+ * Display the tick inside the checkbox
+ */
+.bitBluCheckbox label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid #000;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.bitBluCheckbox label:hover::after {
+	opacity: 0.1;
+}
+
+.bitBluCheckbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+.teamMember
+{
+    width:30%;
+    height:188px;
+    padding-right:25px;
+    padding-bottom:20px;
+    display:inline-block;
+}
+
+.teamMemberName
+{
+    color:#444444;
+    height:73px;
+    line-height:100%;
+}
+
+.teamMemberJob
+{
+    letter-spacing:0px;
+    font-size:13px;
 }
 
 #cycler {position:relative;}

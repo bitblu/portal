@@ -172,6 +172,37 @@
 	height: 1.8em;
 	color: #ffffff;
 }
+
+.regButton 
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    display:inline;
+    text-align:center;
+	font-size: 1.6em;
+	font-family: 'Roboto Slab', serif;
+	border: 0 none;
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: -webkit-gradient(linear, left top, left bottom, from( rgba(255, 255, 255, 0)), to( rgba(0, 0, 0, 0.2)));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 2px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	color: inherit;
+	cursor: pointer;
+	background: #24286c;
+	height: 1.8em;
+	color: #ffffff;
+}
 /*--------------------------------------------------------------------------*/
 /*	CALLOUT BOX
 /*--------------------------------------------------------------------------*/
