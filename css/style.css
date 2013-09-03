@@ -1773,3 +1773,15 @@ h1.with-margin-top {
 #contact-form-header {
     margin-bottom: 2px;
 }
+input {
+    border-radius: 4px;
+}
+#mce-EMAIL {
+    height: 30px;
+}
+.regButton {
+    position: relative;
+    bottom: 1px;
+    height: 46px;
+    margin-left: 5px;
+}
