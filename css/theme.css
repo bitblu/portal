@@ -1,7 +1,7 @@
 /* ----- Logo ----- */
 
 #logo a {
-	background-image:url('../images/wflogo.png'); 
+	/*background-image:url('../images/wflogo.png'); */
 	min-height:0;
 	height:40px;
 }
@@ -106,7 +106,7 @@ html{
 	color:#333333;
 	font-size:100%;
 }
-{* Custom Fonts Break Dropdown Selection in IE *}
+/*Custom Fonts Break Dropdown Selection in IE*/
 .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file{ 
 	font-family:inherit;
 }
@@ -365,5 +365,7 @@ a.powertiny b, a.powertiny em{
 	}
 }
 
-/* - - - Custom Theme - - - */
+#contact-prefix-text {
+    margin-bottom: 5px;
+}
 
