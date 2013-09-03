@@ -1711,3 +1711,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 #post-contact-msg {
     margin-top: 5px;
 }
+#saveForm {
+    display: inline-block;
+}
