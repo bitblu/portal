@@ -373,6 +373,9 @@ address {
 .cs-text > span {
 	display: block;
 }
+.hidden {
+    display: none;
+}
 .cs-text-cut {
 	width: 100%;
 	overflow: hidden;

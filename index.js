@@ -149,20 +149,17 @@ function submitEmail() {
 
 	if ((textBox.prop("value") == "") || (textBox.prop("value") == "Your e-mail")) {
 		alert("Please enter an e-mail");
-		isValid = false;
+		return false;
 	}
-	else {
-		if (!isValidEmailAddress(textBox.prop("value")))
-		{
-			alert("Please enter a valid e-mail");
-			isValid = false;
-		}
-	}
+    if (!isValidEmailAddress(textBox.prop("value")))
+    {
+        alert("Please enter a valid e-mail");
+        return false;
+    }
 
-	if (isValid) {
-		$("#mc-embedded-subscribe-form").ajaxSubmit();
-	}
-	
+    // Success
+	$("#mc-embedded-subscribe-form").ajaxSubmit();
+    $("#post-email-div").show();
 	return false;
 }
 
