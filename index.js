@@ -135,16 +135,16 @@ function changeMailingList() {
 
 }
 
-function emailTextBox(textBox) {
-	if (textBox.value == "Your e-mail") {
+function textBoxFocus(textBox, def) {
+	if (textBox.value == def) {
 		textBox.value = "";
 	}
 }
 
-function emailTextBoxBlur(textBox)
+function textBoxBlur(textBox, def)
 {
 	if (textBox.value == "") {
-		textBox.value = "Your e-mail";
+		textBox.value = def;
 	}
 }
 
@@ -168,6 +168,38 @@ function submitEmail() {
     // TODO - some accordion/expando instead of show()
     $("#post-email-div").show();
 	return false;
+}
+
+function submitContact() {
+    isValid = true;
+    name = $("#yourName", "#contactForm");
+    email = $("#yourEmail", "#contactForm");
+    message = $("#yourMEssage", "#contactForm");
+
+    if ((name.prop("value") == "") || (name.prop("value") == "Name")) {
+        alert("Please enter your name");
+        return false;
+    }
+
+    if ((email.prop("value") == "") || (email.prop("value") == "E-mail address")) {
+        alert("Please enter your email");
+        return false;
+    }
+
+    if ((message.prop("value") == "") || (message.prop("value") == "Your message")) {
+        alert("Please enter your message");
+        return false;
+    }
+
+    if (!isValidEmailAddress(email.prop("value"))) {
+        alert("Please enter a valid e-mail");
+        return false;
+    }
+
+    // Success
+    $("#contactForm").ajaxSubmit();
+
+    return false;
 }
 
 function isValidEmailAddress(emailAddress) {

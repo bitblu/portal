@@ -347,73 +347,33 @@
 		</div>-->
 
 
-        <div style="display:inline-block">
+        <div style="display:inline-block;width:40%">
 
-            <form id="signUpForm" name="form2" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+            <form id="signUpForm" id="contactForm" name="form2" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
                     action="https://bitblu.wufoo.com/forms/m7x4z5/#public">
   
-            <header class="bit-navy bit-armata" id="header" class="info">
-            <h2>Get in touch</h2>
-            <div class="bit-gray bit-roboto" >We value our customers and see them as our partners, not (just) our source of revenue.</div>
-            </header>
+                <header class="bit-navy bit-armata" id="header" class="info">
+                <h2>Get in touch</h2>
+                <div class="bit-gray bit-roboto" >We value our customers and see them as our partners, not (just) our source of revenue.</div>
+                </header>
 
-            <ul>
+                <input id="Field1" class="textBox" style="width:100%" id="yourName" name="Field1" type="text" value="Name" maxlength="255" tabindex="1" onkeyup=""  onclick="textBoxFocus(this, 'Name')" onblur="textBoxBlur(this, 'Name')" required />
+                <input id="Field5" class="textBox" style="width:100%" id="yourEmail" name="Field5" type="email" spellcheck="false" value="E-mail address" maxlength="255" tabindex="2" onclick="textBoxFocus(this, 'E-mail address')" onblur="textBoxBlur(this, 'E-mail address')" required /> 
+                <textarea id="Field2" name="Field2" style="width:100%" id="yourMessage" class="textBox" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup="" onclick="textBoxFocus(this, 'Your message')" onblur="textBoxBlur(this, 'Your message')" required>Your message</textarea>
+                <input id="saveForm" name="saveForm" class="button btTxt submit" style="font-size:14px;font-family:'Roboto Slab', serif;" type="button" value="Send"/>
 
-            <li id="foli1" class="notranslate      ">
-            <label class="desc" id="title1" for="Field1">
-            Name
-            <span id="req_1" class="req">*</span>
-            </label>
-            <div>
-            <input id="Field1" class="textBox" name="Field1" type="text" class="field text large" value="Name" maxlength="255" tabindex="1" onkeyup="" required />
-            </div>
-            </li><li id="foli5" class="notranslate      ">
-            <label class="desc" id="title5" for="Field5">
-            E-mail
-            <span id="req_5" class="req">*</span>
-            </label>
-            <div>
-            <input id="Field5" class="textBox" name="Field5" type="email" spellcheck="false" class="field text large" value="eMail address" maxlength="255" tabindex="2" required /> 
-            </div>
-            </li>
-            <li id="foli2" 
-            class="notranslate      "><label class="desc" id="title2" for="Field2">
-            Body
-            <span id="req_2" class="req">*</span>
-            </label>
-
-            <div>
-            <textarea id="Field2" 
-            name="Field2" 
-            class="field textarea medium" 
-            spellcheck="true" 
-            rows="10" cols="50" 
-            tabindex="3" 
-            onkeyup=""
-            required class="textBox">Your message</textarea>
-
-            </div>
-            </li> <li class="buttons ">
-            <div>
-
-                                <input id="saveForm" name="saveForm" class="btTxt submit" 
-                type="submit" value="Submit"
-                /></div>
-            </li>
-
-            <li class="hide">
-            <label for="comment">Do Not Fill This Out</label>
-            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-            <input type="hidden" id="idstamp" name="idstamp" value="avTkRvGGj2JmYqZSNlQWciA0wyaHrATTSFifdBW2/FE=" />
-            </li>
-            </ul>
+                <li class="hide">
+                <label for="comment">Do Not Fill This Out</label>
+                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                <input type="hidden" id="idstamp" name="idstamp" value="avTkRvGGj2JmYqZSNlQWciA0wyaHrATTSFifdBW2/FE=" />
+                </li>
             </form> 
 
 
 
         </div>
 
-        <div style="display:inline-block;width:50px"></div>
+        <div style="display:inline-block;width:150px"></div>
 		<div style="display:inline-block;vertical-align:top">
 			<div class="last bit-navy bit-armata"><h3>Get in touch</h3></div>
 			<div class="last bit-navy bit-roboto">
@@ -434,8 +394,8 @@
 			</div>
 
 		</div>
+        <div class="bitBluSeperator"></div>
 	</div>
-    <div class="bitBluSeperator" style="height:10px"></div>
 
     <!-- Sign Up -->
 
@@ -473,7 +433,7 @@
                         </tr>
                         <tr>
                         <td>
-                            <input type="text" value="Your e-mail" name="EMAIL" id="mce-EMAIL" class="textBox" style="width:400px" onclick="emailTextBox(this)" onblur="emailTextBoxBlur(this)" />
+                            <input type="text" value="Your e-mail" name="EMAIL" id="mce-EMAIL" class="textBox" style="width:400px" onclick="textBoxFocus(this, 'Your e-mail')" onblur="textBoxBlur(this, 'Your e-mail')" />
                         </td>
                         <td style="width:5px">
                         </td>
