@@ -162,10 +162,7 @@ function submitEmail() {
 	if (isValid) {
 		$("#mc-embedded-subscribe-form").ajaxSubmit();
 	}
-}
-
-function emailSubmit() {
-	submitEmail();
+	
 	return false;
 }
 
