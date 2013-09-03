@@ -111,6 +111,10 @@ $(document).ready(function ()
 	}, 13000);
 });
 
+function changeImage(img, source) {
+    img.src = source;
+}
+
 function onLoad() {
 	$(homeSplittingLine).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
 	$(homeSplittingLine2).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
