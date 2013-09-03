@@ -1745,3 +1745,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 h1.with-margin-top {
     margin-top: 55px;
 }
+#bitblu-email {
+    margin-left: 4px;
+}
