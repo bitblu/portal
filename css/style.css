@@ -373,7 +373,7 @@ address {
 .cs-text > span {
 	display: block;
 }
-.hidden {
+.display-none {
     display: none;
 }
 .cs-text-cut {
