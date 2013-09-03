@@ -135,19 +135,6 @@ function changeMailingList() {
 
 }
 
-function textBoxFocus(textBox, def) {
-	if (textBox.value == def) {
-		textBox.value = "";
-	}
-}
-
-function textBoxBlur(textBox, def)
-{
-	if (textBox.value == "") {
-		textBox.value = def;
-	}
-}
-
 function submitEmail() {
     var email = $("#mce-EMAIL").prop("value");
     if ((email == "") || (email == "Your e-mail")) {
