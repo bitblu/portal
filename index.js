@@ -52,63 +52,63 @@ function linedraw(ax, ay, bx, by) {
 }
 
 bool = true;
-function cycleImages(radio) 
-{
-	if (!radio.checked) {
+//function cycleImages(radio)
+//{
+//	if (!radio.checked) {
+//
+//		radio.checked = true;
+//
+//		if (bool) {
+//			$(secondImg).attr("src", $("#img" + radio.value).text());
+//			$(firstImg).fadeOut(800);
+//			$(secondImg).fadeIn(800);
+//		}
+//		else {
+//			$(firstImg).attr("src", $("#img" + radio.value).text());
+//			$(firstImg).fadeIn(800);
+//			$(secondImg).fadeOut(800);
+//		}
+//
+//		bool = !bool;
+//		$(actionTitle).text($("#textOpt" + radio.value).text());
+//	}
+//}
 
-		radio.checked = true;
-
-		if (bool) {
-			$(secondImg).attr("src", $("#img" + radio.value).text());
-			$(firstImg).fadeOut(800);
-			$(secondImg).fadeIn(800);
-		}
-		else {
-			$(firstImg).attr("src", $("#img" + radio.value).text());
-			$(firstImg).fadeIn(800);
-			$(secondImg).fadeOut(800);
-		}
-
-		bool = !bool;
-		$(actionTitle).text($("#textOpt" + radio.value).text());
-	}
-}
-
-function cycleImagesAuto(radio) {
-	if (!radio.checked) {
-
-		radio.checked = true;
-
-		if (bool) {
-			$(secondImg).attr("src", $("#img" + radio.prop("value")).text());
-			$(firstImg).fadeOut(800);
-			$(secondImg).fadeIn(800);
-		}
-		else {
-			$(firstImg).attr("src", $("#img" + radio.prop("value")).text());
-			$(firstImg).fadeIn(800);
-			$(secondImg).fadeOut(800);
-		}
-
-		bool = !bool;
-		$(actionTitle).text($("#textOpt" + radio.prop("value")).text());
-	}
-}
+//function cycleImagesAuto(radio) {
+//	if (!radio.checked) {
+//
+//		radio.checked = true;
+//
+//		if (bool) {
+//			$(secondImg).attr("src", $("#img" + radio.prop("value")).text());
+//			$(firstImg).fadeOut(800);
+//			$(secondImg).fadeIn(800);
+//		}
+//		else {
+//			$(firstImg).attr("src", $("#img" + radio.prop("value")).text());
+//			$(firstImg).fadeIn(800);
+//			$(secondImg).fadeOut(800);
+//		}
+//
+//		bool = !bool;
+//		$(actionTitle).text($("#textOpt" + radio.prop("value")).text());
+//	}
+//}
 
 $(document).ready(function () 
 {
-	var refreshId = setInterval(function () 
-	{
-		var next = $('input[name=pic]:checked', "#pictureRadios").next().prop("checked", "true");
-		if (next.length == 0) 
-		{
-			$(radio1).prop("checked", "true");
-			next = $('input[name=pic]:checked', "#pictureRadios");
-		}
-
-		cycleImagesAuto(next);
-
-	}, 13000);
+//	var refreshId = setInterval(function ()
+//	{
+//		var next = $('input[name=pic]:checked', "#pictureRadios").next().prop("checked", "true");
+//		if (next.length == 0)
+//		{
+//			$(radio1).prop("checked", "true");
+//			next = $('input[name=pic]:checked', "#pictureRadios");
+//		}
+//
+//		cycleImagesAuto(next);
+//
+//	}, 13000);
 });
 
 function changeImage(img, source) {
