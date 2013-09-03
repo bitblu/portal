@@ -151,6 +151,8 @@ function submitEmail() {
 
     // TODO - some accordion/expando instead of show()
     $("#post-email-div").show();
+    $("#hashsignup").hide();
+
 	return false;
 }
 
