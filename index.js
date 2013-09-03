@@ -29,7 +29,7 @@ function scrollToAnchor(aid, id) {
 function markSelected(selected) {
 	x1 = selected.offsetLeft + 15;
 	x2 = selected.offsetLeft + selected.offsetWidth - 15;
-	$(Menu).drawLine(x1, 0, x2, 0, "menuItem", "#393562", 6);
+	$("#Menu").drawLine(x1, 0, x2, 0, "menuItem", "#393562", 6);
 }
 
 function clearOnResize() {
@@ -116,11 +116,12 @@ function changeImage(img, source) {
 }
 
 function onLoad() {
-	$(homeSplittingLine).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$(homeSplittingLine2).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$(homeSplittingLine3).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$(homeSplittingLine4).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$(homeSplittingLine5).drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+	$("#homeSplittingLine").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+	$("#homeSplittingLine2").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+	$("#homeSplittingLine3").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+	$("#homeSplittingLine4").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+	$("#homeSplittingLine5").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    $("#homeSplittingLine6").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
 }
 
 
