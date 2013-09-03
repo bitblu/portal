@@ -1517,4 +1517,10 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 #cycler {position:relative;}
 #cycler img{position:absolute; z-index:1}
-#cycler img.active{z-index:2}   
+#cycler img.active{z-index:2}
+
+#blogbtn {
+    background-color: #3980c2;
+    color: white;
+    padding: 3px 0 5px 0;
+}
