@@ -1751,3 +1751,19 @@ h1.with-margin-top {
 #email-header {
     margin-top: 12px;
 }
+#david-testimonial-img {
+    position: relative;
+    top: -44px;
+}
+#pamir-testimonial-img {
+    position: relative;
+    bottom: 19px;
+}
+#stefan-testimonial-img {
+    position: relative;
+    bottom: 46px;
+}
+#eden-testimonial-img {
+    position: relative;
+    bottom: 71px;
+}
