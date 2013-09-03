@@ -1738,3 +1738,10 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 .twitter-icon {
     background-image: url(../images/sprites/twitter.png);
 }
+.long-text h5 {
+    line-height: 26px !important;
+    width: 70%;
+}
+h1.with-margin-top {
+    margin-top: 55px;
+}
