@@ -198,7 +198,8 @@ function submitContact() {
 
     // Success
     $("#contactForm").ajaxSubmit();
-
+    $("#post-contact-msg").show();
+    $("#saveForm").attr("disable", true);
     return false;
 }
 
