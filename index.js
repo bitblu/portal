@@ -164,6 +164,8 @@ function submitEmail() {
 
     // Success
 	$("#mc-embedded-subscribe-form").ajaxSubmit();
+
+    // TODO - some accordion/expando instead of show()
     $("#post-email-div").show();
 	return false;
 }
