@@ -1708,3 +1708,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     color: white;
     padding: 3px 0 5px 0;
 }
+#post-contact-msg {
+    margin-top: 5px;
+}
