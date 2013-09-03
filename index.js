@@ -126,10 +126,9 @@ function onLoad() {
 
 
 function changeMailingList() {
-	if ($("#addToMailingList").attr("checked")) {
+	if ($("#addToMailingList").is(":checked")) {
 		$("#mc-embedded-subscribe-form").attr("action", "http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=5ff95a04cc");
-	}
-	else {
+	} else {
 		$("#mc-embedded-subscribe-form").attr("action", "http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=3cd83a70d2");
 	}
 
