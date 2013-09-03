@@ -1724,7 +1724,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     height: 38px;
 }
 .social-icon:hover {
-    background-position: 0 -40px;
+    background-position: 0 -41px;
 }
 .facebook-icon {
     background-image: url(../images/sprites/facebook.png);
