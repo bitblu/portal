@@ -151,7 +151,7 @@ function submitEmail() {
 
     // TODO - some accordion/expando instead of show()
     $("#post-email-div").show();
-    $("#hashsignup").hide();
+    $("#regButton").attr("disabled", "disabled");
 
 	return false;
 }
