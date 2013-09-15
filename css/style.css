@@ -88,6 +88,13 @@ h2 {
     line-height: 1.2em;
     font-size: 1.1em;
 }
+.oldh4,h4 {
+		font-size: 18px;
+	margin-bottom: 10px;
+    
+    
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
@@ -1549,7 +1556,7 @@ h1.with-margin-top {
 }
 #eden-testimonial-img {
     position: relative;
-    bottom: 36px;
+    bottom: 83px;
 }
 #contact-prefix-text {
     margin-bottom: 27px;
