@@ -1,54 +1,61 @@
 var m7x4z5;
 (function (d, t) {
-	var s = d.createElement(t), options = {
-		'userName': 'bitblu',
-		'formHash': 'm7x4z5',
-		'autoResize': true,
-		'height': '495',
-		'async': true,
-		'header': 'show'
-	};
-	s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-	s.onload = s.onreadystatechange = function () {
-		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-		try { m7x4z5 = new WufooForm(); m7x4z5.initialize(options); m7x4z5.display(); } catch (e) { } 
-	};
-	var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    var s = d.createElement(t), options = {
+        'userName': 'bitblu',
+        'formHash': 'm7x4z5',
+        'autoResize': true,
+        'height': '495',
+        'async': true,
+        'header': 'show'
+    };
+    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+    s.onload = s.onreadystatechange = function () {
+        var rs = this.readyState;
+        if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try {
+            m7x4z5 = new WufooForm();
+            m7x4z5.initialize(options);
+            m7x4z5.display();
+        } catch (e) {
+        }
+    };
+    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode;
+    par.insertBefore(s, scr);
 })(document, 'script');
 
 function scrollToAnchor(aid, id) {
-	var divTag = $("div[id='" + aid + "']");
-	var menuTag = $("div[id='Menu']");
-	$('html,body').animate({ scrollTop: divTag.offset().top - menuTag.height() - 50 }, 'meduim');
+    var divTag = $("div[id='" + aid + "']");
+    var menuTag = $("div[id='Menu']");
+    $('html,body').animate({ scrollTop: divTag.offset().top - menuTag.height() - 50 }, 'meduim');
 
-	if (id != null) {
-		markSelected(id);
-	}
+    if (id != null) {
+        markSelected(id);
+    }
 }
 
 function markSelected(selected) {
-	x1 = selected.offsetLeft + 15;
-	x2 = selected.offsetLeft + selected.offsetWidth - 15;
-	$("#Menu").drawLine(x1, 0, x2, 0, "menuItem", "#393562", 6);
+    x1 = selected.offsetLeft + 15;
+    x2 = selected.offsetLeft + selected.offsetWidth - 15;
+    $("#Menu").drawLine(x1, 0, x2, 0, "menuItem", "#393562", 6);
 }
 
 function clearOnResize() {
-	$(Menu).clearLine("menuItem");
+    $(Menu).clearLine("menuItem");
 }
 
 function linedraw(ax, ay, bx, by) {
-	if (ay > by) {
-		bx = ax + bx;
-		ax = bx - ax;
-		bx = bx - ax;
-		by = ay + by;
-		ay = by - ay;
-		by = by - ay;
-	}
-	var calc = Math.atan((ay - by) / (bx - ax));
-	calc = calc * 180 / Math.PI;
-	var length = Math.sqrt((ax - bx) * (ax - bx) + (ay - by) * (ay - by));
-	document.body.innerHTML += "<div id='line' style='height:" + length + "px;width:1px;background-color:black;position:absolute;top:" + (ay) + "px;left:" + (ax) + "px;transform:rotate(" + calc + "deg);-ms-transform:rotate(" + calc + "deg);transform-origin:0% 0%;-moz-transform:rotate(" + calc + "deg);-moz-transform-origin:0% 0%;-webkit-transform:rotate(" + calc + "deg);-webkit-transform-origin:0% 0%;-o-transform:rotate(" + calc + "deg);-o-transform-origin:0% 0%;'></div>"
+    if (ay > by) {
+        bx = ax + bx;
+        ax = bx - ax;
+        bx = bx - ax;
+        by = ay + by;
+        ay = by - ay;
+        by = by - ay;
+    }
+    var calc = Math.atan((ay - by) / (bx - ax));
+    calc = calc * 180 / Math.PI;
+    var length = Math.sqrt((ax - bx) * (ax - bx) + (ay - by) * (ay - by));
+    document.body.innerHTML += "<div id='line' style='height:" + length + "px;width:1px;background-color:black;position:absolute;top:" + (ay) + "px;left:" + (ax) + "px;transform:rotate(" + calc + "deg);-ms-transform:rotate(" + calc + "deg);transform-origin:0% 0%;-moz-transform:rotate(" + calc + "deg);-moz-transform-origin:0% 0%;-webkit-transform:rotate(" + calc + "deg);-webkit-transform-origin:0% 0%;-o-transform:rotate(" + calc + "deg);-o-transform-origin:0% 0%;'></div>"
 }
 
 bool = true;
@@ -115,43 +122,42 @@ function changeImage(img, source) {
 }
 
 function onLoad() {
-	$("#homeSplittingLine").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$("#homeSplittingLine2").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$("#homeSplittingLine3").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$("#homeSplittingLine4").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-	$("#homeSplittingLine5").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    $("#homeSplittingLine").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    $("#homeSplittingLine2").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    $("#homeSplittingLine3").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    $("#homeSplittingLine4").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    $("#homeSplittingLine5").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
     $("#homeSplittingLine6").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
 }
 
 
 function changeMailingList() {
-	if ($("#addToMailingList").is(":checked")) {
-		$("#mc-embedded-subscribe-form").attr("action", "http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=5ff95a04cc");
-	} else {
-		$("#mc-embedded-subscribe-form").attr("action", "http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=3cd83a70d2");
-	}
+    if ($("#addToMailingList").is(":checked")) {
+        $("#mc-embedded-subscribe-form").attr("action", "http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=5ff95a04cc");
+    } else {
+        $("#mc-embedded-subscribe-form").attr("action", "http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=3cd83a70d2");
+    }
 }
 
 function submitEmail() {
     var email = $("#mce-EMAIL").prop("value");
     if ((email == "") || (email == "Your e-mail")) {
-		alert("Please enter an e-mail");
-		return false;
-	}
-    if (!isValidEmailAddress(email))
-    {
+        alert("Please enter an e-mail");
+        return false;
+    }
+    if (!isValidEmailAddress(email)) {
         alert("Please enter a valid e-mail");
         return false;
     }
 
     // Success
-	$("#mc-embedded-subscribe-form").ajaxSubmit();
+    $("#mc-embedded-subscribe-form").ajaxSubmit();
 
     // TODO - some accordion/expando instead of show()
     $("#post-email-div").show();
     $("#regButton").attr("disabled", "disabled");
 
-	return false;
+    return false;
 }
 
 function submitContact() {
@@ -184,23 +190,35 @@ function submitContact() {
     return false;
 }
 
-$(function(){
+$(function () {
     $("#saveForm").click(submitContact);
 });
 
 function isValidEmailAddress(emailAddress) {
-	var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
-	return pattern.test(emailAddress);
+    var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+    return pattern.test(emailAddress);
 }
 
 // Mobile
-$(function(){
-    $("#splash-close-x,#splash-close-button").click(function(){
+function allowZoom(flag) {
+    // http://stackoverflow.com/a/3357148/11236
+    if (flag) {
+        $('head meta[name=viewport]').remove();
+        $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, minimum-scale=1, user-scalable=1" />');
+    } else {
+        $('head meta[name=viewport]').remove();
+        $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />');
+    }
+}
+$(function () {
+    allowZoom(false);
+    $("#splash-close-x,#splash-close-button").click(function () {
         $("#mobile-splash").remove(); // !important shit
         $("#popup-shadow").hide();
+        allowZoom(true);
     });
 
-    $("#mobile-splash, #popup-shadow").bind("touchmove",function(event){
+    $("#mobile-splash, #popup-shadow").bind("touchmove", function (event) {
         event.preventDefault();
     });
 });
