@@ -193,9 +193,14 @@ function isValidEmailAddress(emailAddress) {
 	return pattern.test(emailAddress);
 }
 
+// Mobile
 $(function(){
     $("#splash-close-x,#splash-close-button").click(function(){
         $("#mobile-splash").remove(); // !important shit
         $("#popup-shadow").hide();
+    });
+
+    $("#popup-shadow").bind("touchmove",function(event){
+        event.preventDefault();
     });
 });
