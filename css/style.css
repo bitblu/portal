@@ -1019,31 +1019,6 @@ address {
     padding-left: 2%;
 }
 
-#contact-submit input[type="submit"] {
-    padding: 20px 2%;
-    border: 0 none;
-    color: #ffffff;
-    display: block;
-    width: 95%;
-    cursor: pointer;
-    background-position: center center;
-    background-repeat: no-repeat;
-    float: left;
-    height: 60px;
-    margin: auto 1%;
-    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.15);
-    text-indent: -9999px;
-    background-color: #151515;
-    background-image: url(../images/mail.png);
-    background-image: url(../images/mail.png), -moz-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
-    background-image: url(../images/mail.png), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.2)));
-    background-image: url(../images/mail.png), -o-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
-    background-image: url(../images/mail.png), linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
-    background-image: url(../images/mail.png), -ms-linear-gradient(top, rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.2));
-    background-image: url(../images/mail.png), -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
-    background-color: #151515;
-}
-
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
     background: #fff;
     padding: 8px 8px;
