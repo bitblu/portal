@@ -34,7 +34,7 @@
 }
 #splash-text {
     color: #1F155A;
-    font-size: 24px;
+    font-size: 22px;
     padding-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -44,7 +44,7 @@
 }
 #splash-close-button {
     margin: 30px auto;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 20px;
     color: white;
     background-color: #25286D;
