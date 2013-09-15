@@ -482,40 +482,29 @@
         <!-- 5ff95a04cc - ID of the extra-info list -->
         <div id="mc_embed_signup" style="display:block">
             <form action="http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=5ff95a04cc" method="post"
-                  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+                  id="subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
                   onsubmit="return submitEmail()" novalidate>
-                <center>
-                    <table cellspacing="100" cellpadding="100">
-                        <tr>
-                            <td colspan="3" style="vertical-align:bottom">
-                                <div class="bitBluCheckbox" style="display:inline-block">
-                                    <input id="addToMailingList" type="checkbox" value="1" checked name="addToMailingList" onclick="changeMailingList()"/>
-                                    <label for="addToMailingList"></label>
-                                </div>
-                                <div class="last bit-gray bit-roboto" style="display:inline-block">
-                                    <h5>
-                                        <label for="addToMailingList">Notify me about important updates</label>
-                                    </h5>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="text" placeholder="Your email" name="EMAIL" id="mce-EMAIL" class="textBox" style="width:400px"/>
-                            </td>
-                            <td style="width:5px">
-                            </td>
-                            <td>
-                                <input type="button" value="Send" class="regButton" onclick="submitEmail()"/>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
+                <div id='notify-checkbox-row'>
+                    <div class="bitBluCheckbox" style="display:inline-block">
+                        <input id="addToMailingList" type="checkbox" value="1" checked name="addToMailingList" onclick="changeMailingList()"/>
+                        <label for="addToMailingList"></label>
                     </div>
-                </center>
+                    <div class="last bit-gray bit-roboto" style="display:inline-block">
+                        <h5>
+                            <label for="addToMailingList">Notify me about important updates</label>
+                        </h5>
+                    </div>
+                </div>
+
+                <div id='email-submission-row'>
+                    <input type="text" placeholder="Your email" name="EMAIL" id="mce-EMAIL" class="textBox" style="width:400px"/>
+                    <input type="button" value="Send" id='regButton' class="regButton" onclick="submitEmail()"/>
+                </div>
+
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
             </form>
         </div>
 

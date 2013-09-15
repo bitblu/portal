@@ -1779,9 +1779,16 @@ input {
 #mce-EMAIL {
     height: 30px;
 }
-.regButton {
-    position: relative;
-    bottom: 1px;
+#regButton {
     height: 46px;
     margin-left: 5px;
+}
+
+#email-submission-row input {
+    display:inline-block;
+    margin-bottom: 0;
+}
+#subscribe-form {
+    width:560px;
+    margin:auto;
 }
