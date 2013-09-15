@@ -20,8 +20,8 @@
           content="Bitcoin, Crypto-currency, Digital currencies, Litecoin, Namecoin, Ripple, ASICMiner, Portfolio Management, Investing, Investment, one-page"/>
     <meta name="author" content="Bitblu"/>
 
-    <link rel="stylesheet" media="only screen and (max-width: 550px)" href="css/mobile.css"/>
-    <link rel="stylesheet" media="only screen and (min-width: 551px)" href="css/desktop.css"/>
+    <link type="text/css" rel="stylesheet" media="only screen and (max-width: 550px)" href="css/mobile.css"/>
+    <link type="text/css" rel="stylesheet" media="only screen and (min-width: 551px)" href="css/desktop.css"/>
 
 
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -64,8 +64,17 @@
     </script>
 </head>
 <body data-spy="scroll" data-target=".navigation" onload="onLoad()" onresize="clearOnResize()">
+<div id='popup-shadow'></div>
 <div id='mobile-splash' style='display:none'>
-    We are still building the mobile experience, please try our desktop site for now.
+    <div id='splash-close-x'></div>
+    <div id='splash-logo'></div>
+    <div class='splash-seperator'></div>
+    <div class='bit-armata' id='splash-text'>This site is best viewed on desktop browsers.</div>
+    <div class='splash-seperator'></div>
+    <div id='splash-button-wrapper'>
+        <input type="button" class='bit-armata' id="splash-close-button" value="Continue"/>
+    </div>
+    <div id='splash-footer'></div>
 </div>
 <!-- Texts and images for main title -->
     <span style="visibility:hidden">

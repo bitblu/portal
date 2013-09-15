@@ -95,8 +95,7 @@ bool = true;
 //	}
 //}
 
-$(document).ready(function () 
-{
+$(document).ready(function () {
 //	var refreshId = setInterval(function ()
 //	{
 //		var next = $('input[name=pic]:checked', "#pictureRadios").next().prop("checked", "true");
@@ -131,7 +130,6 @@ function changeMailingList() {
 	} else {
 		$("#mc-embedded-subscribe-form").attr("action", "http://bitblu.us7.list-manage1.com/subscribe/post?u=01a79b4a9782a30551e3702fa&amp;id=3cd83a70d2");
 	}
-
 }
 
 function submitEmail() {
@@ -194,3 +192,10 @@ function isValidEmailAddress(emailAddress) {
 	var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
 	return pattern.test(emailAddress);
 }
+
+$(function(){
+    $("#splash-close-x,#splash-close-button").click(function(){
+        $("#mobile-splash").remove(); // !important shit
+        $("#popup-shadow").hide();
+    });
+});
