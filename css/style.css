@@ -358,39 +358,6 @@ address {
 .navigation li a:before {
 }
 
-/*========= R E S P O N S I V E   N A V I G A T I O N =========== */
-.selectnav {
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-
-    margin: 15px 0 10px;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    line-height: 1;
-    padding: 0px 10px;
-    border-radius: 0;
-    background-image: url(../images/selectmenu.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    min-width: 120px;
-    color: #3d3d3d;
-    outline: none;
-    background-size: 27px;
-    font-weight: bold;
-}
-
-.selectnav {
-    display: none;
-}
-
 /*========= H O M E  S E C T I O N =========== */
 .home-text-wrapper {
     display: table-cell;
@@ -597,73 +564,6 @@ address {
     border: 2px solid rgba(0, 0, 0, 0.08);
 }
 
-/*==== PORTFOLIO AJAX NAVIGATION =====*/
-#project-navigation {
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    margin: 0;
-    z-index: 1;
-}
-
-#project-navigation ul {
-    float: none;
-    margin: 0;
-    list-style: none;
-    display: none;
-    padding: 0;
-}
-
-#project-navigation ul li#prevProject a {
-    background: url(../images/arrow_left.png) center center no-repeat;
-    float: right;
-    margin-right: 64px;
-}
-
-#project-navigation ul li#nextProject a {
-    background: url(../images/arrow_right.png) center center no-repeat;
-    float: right;
-    margin-right: 10px;
-}
-
-#project-navigation ul li#prevProject a, #project-navigation ul li#nextProject a {
-    background-color: #151515;
-    background-size: 30px;
-}
-
-#project-navigation ul li a {
-    width: 40px;
-    height: 40px;
-    float: left;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-#project-navigation ul li#prevProject a:hover, #project-navigation ul li#nextProject a:hover {
-    opacity: 0.7;
-    -moz-opacity: 0.7;
-    filter: alpha(opacity=70);
-}
-
-#project-navigation ul li a:hover {
-    opacity: 0.7;
-    -moz-opacity: 0.7;
-    filter: alpha(opacity=70);
-}
-
-#project-navigation ul li a.disabled, #project-navigation ul li a.disabled:hover {
-    cursor: default;
-    background-color: rgba(0, 0, 0, 0.2) !important;
-}
-
 /*=== PROJECT CLOSE ===*/
 #closeProject {
     top: 10px;
@@ -697,57 +597,6 @@ address {
     line-height: 40px;
     display: inline-table;
     vertical-align: middle;
-}
-
-#ajax-section {
-    position: relative;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.03);
-    text-align: left;
-}
-
-#ajax-section #loader {
-    width: 100%;
-    height: 20px;
-    display: none;
-    position: absolute;
-    top: -30px;
-}
-
-#ajax-section #loader.projectError {
-    text-align: center;
-    height: auto !important;
-    background-position: top center;
-}
-
-#ajax-section #loader.projectError p {
-    display: none;
-    padding-top: 16px;
-}
-
-#ajax-section #loader {
-    background: url(../images/loader.gif) center center no-repeat;
-}
-
-#ajax-section #loader.projectError p {
-    color: #666 !important;
-}
-
-#ajax-content-outer {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#ajax-content-inner {
-    float: left;
-    height: 0;
-    opacity: 0;
-}
-
-#ajaxpage {
-    float: left;
-    display: block;
 }
 
 .project-media {
@@ -1073,42 +922,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     padding: 10px 0;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-/* ------------------------------------------------------------------------ */
-/* TWITTER SECTION
-/* ------------------------------------------------------------------------ */
-.twitter-feed {
-    font-size: 20px;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.twitter-feed .tweet_list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-    background-image: url(../images/twitter-bird.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    min-height: 94px;
-    text-align: center;
-    background-size: 50px;
-}
-
-.twitter-feed .tweet_list li {
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 60px 0px 20px;
-    list-style-type: none;
-}
-
-.twitter .tweet_list li {
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 10px 0px;
-    list-style-type: none;
 }
 
 .tweet_list li a {
