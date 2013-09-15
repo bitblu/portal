@@ -200,7 +200,7 @@ $(function(){
         $("#popup-shadow").hide();
     });
 
-    $("#popup-shadow").bind("touchmove",function(event){
+    $("#mobile-splash, #popup-shadow").bind("touchmove",function(event){
         event.preventDefault();
     });
 });
