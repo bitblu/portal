@@ -1,15 +1,21 @@
 #mobile-splash {
     display: block !important;
     z-index: 1000000;
-    width: 80%;
-    height: 400px;
     position: fixed;
-    background: #ffffff;
-    left: 10%;
+    margin:auto;
+    left: 0;
     top: 10%;
-    padding: 10px;
+    width:100%;
+}
+#mobile-splash-inner {
+    height: 340px;
     border-radius: 4px;
     box-shadow: 0 10px 32px #000;
+    padding: 10px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    background: #ffffff;
 }
 #popup-shadow {
     position: fixed;
@@ -45,14 +51,14 @@
 #splash-close-button {
     margin: 30px auto;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 5px 15px;
     color: white;
     background-color: #25286D;
     display: block;
 }
 #splash-footer {
     width: 100%;
-    background-image: url(../images/bg_mobile.png);
+    /*background-image: url(../images/bg_mobile.png);*/
     height: 62px;
     position: absolute;
     bottom: 0;
