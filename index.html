@@ -6,6 +6,7 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
+<!--suppress HtmlFormInputWithoutLabel -->
 <html class="no-js">
 <!--<![endif]-->
 <head>
@@ -45,6 +46,7 @@
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
+            //noinspection PointlessArithmeticExpressionJS
             i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
@@ -120,8 +122,8 @@
                     <h1>The easiest way to <span id="actionTitle">manage</span> <br/> your cryptocurrency portfolio.</h1>
                 </div>
                 <div style="display:inline-block;width:40%">
-                    <img id="firstImg" src="images/MainImages/1.png" style="position:absolute; z-index:2; left:65%;top:0px" alt=""/>
-                    <img id="secondImg" src="images/MainImages/2.png" style="position:absolute; left:65%;top:0px" alt=""/>
+                    <img id="firstImg" src="images/MainImages/1.png" style="position:absolute; z-index:2; left:65%;top:0" alt=""/>
+                    <img id="secondImg" src="images/MainImages/2.png" style="position:absolute; left:65%;top:0" alt=""/>
                 </div>
             </div>
             <div style="height:155px"></div>
@@ -147,9 +149,9 @@
             <div style="display:inline-block;width:13%">
             </div>
             <div style="display:inline-block; width:20%; vertical-align:top;">
-                <center>
+                <div style="text-align: center;">
                     <input type="button" value="Get Started" onclick="scrollToAnchor('hashsignup', null)" class="button"/>
-                </center>
+                </div>
             </div>
         </div>
 
@@ -169,7 +171,7 @@
                 </h1>
             </div>
             <div class="last bit-gray bit-roboto long-text">
-                <h5>
+                <div class="oldh5">
                     <p>Crypto-currency investment is hard...</p>
 
                     <p>Our mission is to make your digital investment experience easy and secure.</p>
@@ -180,7 +182,7 @@
                         this complex world by building simple indexes and investment tools that make it as
                         easy to understand as the S&P 500 or Google Finance.
                     </p>
-                </h5>
+                </div>
             </div>
 
         </div>
@@ -194,7 +196,7 @@
                 </h1>
             </div>
             <div class="last bit-gray bit-roboto long-text">
-                <h5>
+                <div class="oldh5">
                     <p>
                         We will set the bar for transparency in the Bitcoin world.
                     </p>
@@ -205,13 +207,7 @@
                         are doing. We promise to never play dirty, and to be completely honest and open about
                         what do and how we do it.
                     </p>
-                    <!--We value our customers and see them as our partners, not (just) our source of revenue. We are gathering the best minds-->
-                    <!--in the Bitcoin world to make sure your assets are secure and well-managed.-->
-
-                    <!--We will set the bar on transparency in the Bitcoin world. It is important to us that you understand each component of-->
-                    <!--your investment portfolio, and will be able to rest assured knowing how your funds are doing. We promise to never play-->
-                    <!--dirty, and be completely honest and open about what do and how we do it.-->
-                </h5>
+                </div>
             </div>
 
         </div>
@@ -330,7 +326,9 @@
                 <div style="display:inline-block;left:100em;width:67em">
                     <div>
                         <h4 style="letter-spacing:1px">David A. Johnston
-                            <font color="#c2c2c2"> | Engine Inc., BitAngels</font>
+                            <span class="testimonial-title">
+                                | Engine Inc., BitAngels
+                            </span>
                         </h4>
                     </div>
                     <div class="last bit-navy bit-roboto" style="letter-spacing:0"><h4>"Bitblu is developing an important new tool for investors in the Bitcoin and broader digital currency eco-system.
@@ -345,7 +343,8 @@
                     <img id='pamir-testimonial-img' src='images/testimonials/pamir.png'></div>
                 <div style="display:inline-block;width:3em"></div>
                 <div style="display:inline-block;left:100em;width:67em">
-                    <div><h4 style="letter-spacing:1px">Pamir Gelenbe <font color="#c2c2c2"> | Bitcoin London, Hummingbird Ventures</font>
+                    <div><h4 style="letter-spacing:1px">Pamir Gelenbe
+                        <span class="testimonial-title"> | Bitcoin London, Hummingbird Ventures</span>
                     </h4></div>
                     <div class="last bit-navy bit-roboto" style="letter-spacing:0">
                         <h4>"Bitblu is building the infrastructure components required by anyone considering investing
@@ -361,7 +360,10 @@
                     <img id='stefan-testimonial-img' src='images/testimonials/stefan.png'></div>
                 <div style="display:inline-block;width:3em"></div>
                 <div style="display:inline-block;left:100em;width:67em">
-                    <div><h4 style="letter-spacing:1px">Stefan Thomas<font color="#c2c2c2"> | CTO of OpenCoin Inc. (Ripple)</font>
+                    <div><h4 style="letter-spacing:1px">Stefan Thomas
+                        <span class="testimonial-title">
+                            | CTO of OpenCoin Inc. (Ripple)
+                        </span>
                     </h4></div>
                     <div class="last bit-navy bit-roboto" style="letter-spacing:0"><h4>"Navigating the space of math-based currencies can be daunting. I think there is a huge opportunity for Bitblu to improve transparency in this sector and make it easier for investors to manage their cryptocurrency portfolio!"</h4></div>
                 </div>
@@ -373,12 +375,18 @@
                 <div style="display:inline;width:100px;height:138px"><img id='eden-testimonial-img' src='images/testimonials/eden.png'></div>
                 <div style="display:inline-block;width:3em"></div>
                 <div style="display:inline-block;left:100em;width:67em">
-                    <div><h4 style="letter-spacing:1px">Eden Shochat <font color="#c2c2c2"> | aleph.vc, the Israeli Bitcoin Foundation</font>
-                    </h4></div>
-                    <div class="last bit-navy bit-roboto" style="letter-spacing:0px">
-                        <h4><p>"Crypto currencies are one of those tidal waves that change a complete industry.</p>
-                            <p>With banks and other legacy financial institutions at best not really getting it, and at worst trying to work against it, there comes a need for a new form of portfolio management. I can't wait to see the first deployments of Bitblu and how this great team tackles this problem."</p>
+                    <div>
+                        <h4 style="letter-spacing:1px">Eden Shochat
+                            <span class="testimonial-title">
+                                | aleph.vc, the Israeli Bitcoin Foundation
+                            </span>
                         </h4>
+                    </div>
+                    <div class="last bit-navy bit-roboto" style="letter-spacing:0">
+                        <div class="oldh4">
+                            <p>"Crypto currencies are one of those tidal waves that change a complete industry.</p>
+                            <p>With banks and other legacy financial institutions at best not really getting it, and at worst trying to work against it, there comes a need for a new form of portfolio management. I can't wait to see the first deployments of Bitblu and how this great team tackles this problem."</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -419,11 +427,11 @@
             <input id="saveForm" name="saveForm" class="button btTxt submit" style="font-size:14px;font-family:'Roboto Slab', serif;" type="button" value="Send"/>
             <span id="post-contact-msg" class="display-none">Thanks, we will be in touch soon.</span>
 
-            <li class="hide">
+            <div class="hide">
                 <label for="comment">Do Not Fill This Out</label>
                 <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
                 <input type="hidden" id="idstamp" name="idstamp" value="avTkRvGGj2JmYqZSNlQWciA0wyaHrATTSFifdBW2/FE="/>
-            </li>
+            </div>
         </form>
 
 
@@ -513,7 +521,7 @@
     </div>
 </div>
 
-<div class="gray-section" style='box-shadow: -20px 0 5px rgba(0, 0, 0, 0.25);' id='post-email-div' class="display-none">
+<div class="gray-section,display-none" style='box-shadow: -20px 0 5px rgba(0, 0, 0, 0.25);' id='post-email-div'>
 
     <div style="width:100%;height:20px ;text-align:center" id="homeSplittingLine6"></div>
     <div class="row section-padding contentContainer" id="hashthankyou">
@@ -537,7 +545,7 @@
 </div>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/jquery.fittext.js"></script>
 <script src="js/jquery.fitvids.js"></script>

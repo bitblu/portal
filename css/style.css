@@ -88,7 +88,7 @@ h2 {
     font-size: 2.8em;
 }
 
-h5 {
+.oldh5,h5 {
     line-height: 1.2em;
     font-size: 1.1em;
 }
@@ -1583,4 +1583,7 @@ input {
 .gray-section {
     background-color:#f5f5f5;
     width:100%;
+}
+.testimonial-title {
+    color: #c2c2c2;
 }
