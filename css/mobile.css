@@ -99,8 +99,17 @@
 }
 #explainer-text {
     width: 100% !important;
-    line-height: 1.5em;
 }
 #home-buffer {
     height:40px !important;
+}
+.oldh5,h5 {
+    /*line-height: 1.5em;*/
+    /*font-size: 1.1em;*/
+}
+.long-text {
+    width: 100% !important;
+}
+h1 {
+    font-size: 2.2em !important;
 }

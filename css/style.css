@@ -84,8 +84,8 @@ h2 {
 }
 
 .oldh5,h5 {
-    line-height: 1.2em;
-    font-size: 1.1em;
+    /*line-height: 1.7em;*/
+    /*font-size: 1.1em;*/
 }
 .oldh4,h4 {
 		font-size: 18px;
@@ -1528,8 +1528,10 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 .twitter-icon {
     background-image: url(../images/sprites/twitter.png);
 }
-.long-text h5 {
-    line-height: 26px !important;
+.long-text {
+    /*line-height: 26px !important;*/
+    line-height: 1.9em !important;
+    font-size: 1.1em;
     width: 70%;
 }
 #bitblu-email {
