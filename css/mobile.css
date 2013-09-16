@@ -142,3 +142,16 @@ h1 {
     position: relative;
     right: 13px;
 }
+.teamMemberName {
+    font-size: 26px !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
+    margin-top: 9px !important;
+    margin-left: 4px !important;
+}
+.teamMemberJob {
+    margin-left: 4px !important;
+}
+.team-card {
+    padding-right: 0 !important;
+}

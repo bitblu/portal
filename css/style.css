@@ -1663,3 +1663,26 @@ input {
 .testimonial-person-wrapper {
     letter-spacing:1px;
 }
+.team-card {
+    height:138px;
+    width:312px;
+}
+#team-ron {
+    background-image:url('../images/team/ron.png');
+}
+#team-yuval {
+    background-image:url('../images/team/yuval.png');
+}
+#team-who {
+    background-image:url('../images/team/who.png');
+}
+#team-meni {
+    background-image:url('../images/team/meni.png');
+}
+#team-david {
+    background-image:url('../images/team/david.png');
+}
+.team-text {
+    padding-left: 108px;
+    padding-top: 16px;
+}
