@@ -1550,6 +1550,7 @@ input {
 }
 #mce-EMAIL {
     height: 30px;
+    width:400px;
 }
 #regButton {
     height: 46px;
@@ -1609,9 +1610,8 @@ input {
 #testimonial-seperator {
     margin-top: 40px;
 }
-.arbitrary-div {
-    display:inline-block;
-    left:100em;
+.testimonial-content {
+    margin-left: 125px;
     max-width:67em;
 }
 .testimonial-image {
@@ -1646,10 +1646,14 @@ input {
     height:20px;
 }
 .testimonial-row  {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .clearfix:after {
     display: block;
     height: 0;
     clear: both;
+}
+#contact-form-wrapper {
+    display:inline-block;
+    width:40%;
 }

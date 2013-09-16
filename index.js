@@ -207,7 +207,7 @@ function allowZoom(flag) {
 }
 $(function () {
     allowZoom(false);
-    $("#splash-close-x,#splash-close-button").click(function () {
+    $("#splash-close-x,#splash-close-button, #popup-shadow").click(function () {
         $("#mobile-splash").remove(); // !important shit
         $("#popup-shadow").hide();
         allowZoom(true);

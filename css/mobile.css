@@ -123,3 +123,11 @@ h1 {
 .testimonial-title {
     display: block;
 }
+#mce-EMAIL {
+    width: 200px !important;
+    display: block !important;
+    margin-bottom: 20px !important;
+}
+#contact-form-wrapper {
+    width:100% !important;
+}
