@@ -75,3 +75,32 @@
 #splash-close-x:hover {
     cursor: pointer;
 }
+#hashhome h1 {
+    font-size: 24px;
+}
+#maincontent {
+    margin-top: 50px !important;
+}
+#firstImg {
+    width: 200px !important;
+    max-width: none;
+    display: block;
+    position: relative !important;
+}
+#title-container {
+    width: 100% !important;
+}
+#getstarted-button {
+    position: relative !important;
+    right: inherit !important;
+    margin: 0 auto;
+    display: block !important;
+    font-size: 23px;
+}
+#explainer-text {
+    width: 100% !important;
+    line-height: 1.5em;
+}
+#home-buffer {
+    height:40px !important;
+}
