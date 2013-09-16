@@ -1562,7 +1562,7 @@ input {
     margin-bottom: 0;
 }
 #subscribe-form {
-    width:560px;
+    max-width:560px;
     margin:auto;
 }
 .gray-section {
@@ -1656,4 +1656,10 @@ input {
 #contact-form-wrapper {
     display:inline-block;
     width:40%;
+}
+#testimonial-text {
+    letter-spacing:0;
+}
+.testimonial-person-wrapper {
+    letter-spacing:1px;
 }

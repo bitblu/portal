@@ -124,10 +124,21 @@ h1 {
     display: block;
 }
 #mce-EMAIL {
-    width: 200px !important;
+    width: 95% !important;
     display: block !important;
     margin-bottom: 20px !important;
 }
 #contact-form-wrapper {
     width:100% !important;
+}
+.testimonial-text {
+    margin-top: 43px !important;
+}
+.testimonial-content {
+    margin-left: 0 !important;
+}
+#addToMailingList-label {
+    font-size: 11px;
+    position: relative;
+    right: 13px;
 }
