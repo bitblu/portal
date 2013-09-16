@@ -4,6 +4,7 @@ body {
     font-size: 13px;
     line-height: 1.5;
     overflow-x: hidden;
+    padding: 0 !important;
 }
 
 .bit-navy {
@@ -1601,12 +1602,14 @@ input {
     display: inline-block;
     width: 65%;
 }
+#home-second-row-holder {
+    margin-right: 68px;
+}
 #getstarted-button {
     display:inline-block;
     vertical-align:top;
     text-align: center;
-    position: absolute;
-    right: 68px;
+    float:right;
 }
 #explainer-text {
     display:inline-block;
