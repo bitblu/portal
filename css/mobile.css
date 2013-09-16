@@ -93,9 +93,13 @@
 #getstarted-button {
     position: relative !important;
     right: inherit !important;
-    margin: 0 auto;
     display: block !important;
+    float: none !important;
+    margin: 0 auto;
     font-size: 23px;
+}
+#home-second-row-holder {
+    width: 100% !important;
 }
 #explainer-text {
     width: 100% !important;
