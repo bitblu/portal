@@ -1571,6 +1571,9 @@ input {
 .testimonial-title {
     color: #c2c2c2;
 }
+.title-separator {
+    color: #c2c2c2;
+}
 #maincontent {
     margin-top: 125px;
 }
