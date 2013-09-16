@@ -1539,22 +1539,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 #email-header {
     margin-top: 9px;
 }
-#david-testimonial-img {
-    position: relative;
-    top: -44px;
-}
-#pamir-testimonial-img {
-    position: relative;
-    bottom: 19px;
-}
-#stefan-testimonial-img {
-    position: relative;
-    bottom: 46px;
-}
-#eden-testimonial-img {
-    position: relative;
-    bottom: 83px;
-}
 #contact-prefix-text {
     margin-bottom: 27px;
 }
@@ -1616,18 +1600,8 @@ input {
 #home-buffer {
     height:190px;
 }
-#homeSplittingLine {
-    width: 100%;
-    height: 20px;
-}
 .row {
     padding: 0 20px;
-}
-#homeSplittingLine2 {
-    margin-top: 40px;
-    width:100%;
-    height:30px;
-    text-align:center
 }
 #testimonial-seperator {
     margin-top: 40px;
@@ -1636,4 +1610,43 @@ input {
     display:inline-block;
     left:100em;
     max-width:67em;
+}
+.testimonial-image {
+    float:left;
+    width: 92px;
+    height: 122px;
+}
+#david-testimonial-img {
+    background-image: url(../images/testimonials/david.png);
+}
+#pamir-testimonial-img {
+    background-image: url(../images/testimonials/pamir.png);
+}
+#eden-testimonial-img {
+    background-image: url(../images/testimonials/eden.png);
+}
+#stefan-testimonial-img {
+    background-image: url(../images/testimonials/stefan.png);
+}
+.home-splitter-line {
+    width:100%;
+    height:30px;
+    text-align:center;
+}
+#homeSplittingLine1 {
+    height: 20px;
+}
+#homeSplittingLine2 {
+    margin-top: 40px;
+}
+#homeSplittingLine6 {
+    height:20px;
+}
+.testimonial-row  {
+    margin-bottom: 20px;
+}
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
 }

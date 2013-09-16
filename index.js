@@ -122,12 +122,7 @@ function changeImage(img, source) {
 }
 
 function onLoad() {
-    $("#homeSplittingLine").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-    $("#homeSplittingLine2").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-    $("#homeSplittingLine3").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-    $("#homeSplittingLine4").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-    $("#homeSplittingLine5").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
-    $("#homeSplittingLine6").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
+    $(".home-splitter-line").drawLine(0, 0, 993, 0, "splittingLine", "#cccccc", 1);
 }
 
 
