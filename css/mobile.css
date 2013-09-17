@@ -54,6 +54,7 @@
     color: white;
     background-color: #25286D;
     display: block;
+    width: 140px; /* Needed for Safari for some reason */
 }
 #splash-footer {
     width: 100%;
