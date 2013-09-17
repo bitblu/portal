@@ -1500,6 +1500,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 #saveForm {
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 /* Social links */
@@ -1651,8 +1652,13 @@ input {
     clear: both;
 }
 #contact-form-wrapper {
-    display:inline-block;
+    display:block;
     width:40%;
+    float: left;
+}
+#contact-links {
+    float: right;
+    margin-right: 100px;
 }
 #testimonial-text {
     letter-spacing:0;
