@@ -158,3 +158,6 @@ h1 {
 #contactForm .textBox , #contactForm textarea {
     width: 95%;
 }
+#contact-links {
+    float: none !important;
+}
