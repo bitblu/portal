@@ -41,7 +41,6 @@
 #splash-text {
     color: #1F155A;
     font-size: 18px;
-    padding-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -49,7 +48,7 @@
     width: 100%;
 }
 #splash-close-button {
-    margin: 30px auto;
+    margin: 15px auto;
     font-size: 18px;
     padding: 5px 15px;
     color: white;
@@ -154,4 +153,7 @@ h1 {
 }
 .team-card {
     padding-right: 0 !important;
+}
+#contactForm .textBox , #contactForm textarea {
+    width: 95%;
 }
